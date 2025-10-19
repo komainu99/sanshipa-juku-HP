@@ -915,76 +915,77 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>入塾テストに申し込む</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>以下の空欄に必要事項を入力してください。</p>
       </div><!-- End Section Title -->
 
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-
-          <div class="col-lg-5">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-7 mx-auto">
+            <form action="forms/contact.php" method="post" class="php-email-form">
               <div class="row gy-4">
+                
+                <!-- 姓と名を分ける -->
+                <div class="col-md-6">
+                  <input type="text" name="last_name" class="form-control" placeholder="姓（例：山田）" required>
+                </div>
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="first_name" class="form-control" placeholder="名（例：太郎）" required>
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="メールアドレス" required>
+                </div>
+
+                <!-- 電話番号の項目を追加 -->
+                <div class="col-md-6">
+                  <input type="tel" class="form-control" name="phone" placeholder="電話番号（ハイフン無し）" required>
+                </div>
+
+                <!-- 選択肢フィールド -->
+                <div class="col-md-12">
+                  <label class="form-label">希望するプランを選択してください</label>
+                  <select name="plan" class="form-control" required>
+                    <option value="">プランを選択</option>
+                    <option value="A">A. ベーシックプラン（¥198,000）</option>
+                    <option value="B">B. スタンダードプラン（¥298,000）</option>
+                    <option value="C">C. エグゼクティブプラン（¥498,000）</option>
+                  </select>
+                </div>
+
+                <!-- ラジオボタン形式の選択肢 -->
+                <div class="col-md-12">
+                  <label class="form-label">受講開始希望時期</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="start_time" value="A" id="startA" required>
+                    <label class="form-check-label" for="startA">来月から</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="start_time" value="B" id="startB">
+                    <label class="form-check-label" for="startB">3ヶ月以内</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="start_time" value="C" id="startC">
+                    <label class="form-check-label" for="startC">時期は未定</label>
+                  </div>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="その他ご質問等ございましたらご記入ください"></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                  <div class="sent-message">メッセージが送信されました。ありがとうございます！</div>
+                  <button type="submit">送信する</button>
                 </div>
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
-
+          </div>
         </div>
-
       </div>
-
     </section><!-- /Contact Section -->
 
   </main>
