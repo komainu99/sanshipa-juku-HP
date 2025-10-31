@@ -1737,6 +1737,7 @@ section,
   /* Add your styles here */
 }
 
+
 /*--------------------------------------------------------------
 # Fixed Banner
 --------------------------------------------------------------*/
@@ -1772,19 +1773,19 @@ section,
   background: rgba(255, 255, 255, 0.2);
   padding: 4px 8px;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   animation: pulse 2s infinite;
 }
 
 .banner-text strong {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .banner-description {
-  font-size: 14px;
+  font-size: 20px;
   opacity: 0.9;
 }
 
