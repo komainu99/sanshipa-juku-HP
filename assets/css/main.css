@@ -877,51 +877,13 @@ section,
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0 30px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
+  padding: 20px 20px;
   transition: all ease-in-out 0.4s;
   height: 100%;
   overflow: hidden;
   z-index: 1;
 }
 
-.services .service-item:before {
-  content: "";
-  position: absolute;
-  background: color-mix(in srgb, var(--accent-color), transparent 96%);
-  right: -80px;
-  top: -80px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  transition: all 0.3s;
-  z-index: -1;
-}
-
-.services .service-item:after {
-  content: "";
-  position: absolute;
-  background: color-mix(in srgb, var(--accent-color), transparent 97%);
-  right: -140px;
-  top: -140px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  transition: all 0.3s;
-  z-index: -1;
-}
-
-.services .service-item i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  font-size: 24px;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-}
 
 .services .service-item h4 {
   font-weight: 600;
@@ -934,31 +896,20 @@ section,
   color: var(--heading-color);
 }
 
+.services .service-item h5 {
+  color: var(--nav-hover-color);
+  font-weight: 600;
+  margin: 15px 0 0 0;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
 .services .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin: 10px 0 0 0;
 }
 
-.services .service-item:hover:before,
-.services .service-item:hover:after {
-  background: var(--accent-color);
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-}
-
-.services .service-item:hover h4 a,
-.services .service-item:hover p {
-  color: var(--contrast-color);
-}
-
-.services .service-item:hover i {
-  background: var(--surface-color);
-  color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Alt Services Section
@@ -1294,39 +1245,6 @@ section,
   overflow: hidden;
 }
 
-.team .team-member .social {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-}
-
-.team .team-member .social a {
-  background: color-mix(in srgb, var(--contrast-color), transparent 25%);
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin: 0 3px;
-  border-radius: 4px;
-  width: 36px;
-  height: 36px;
-  transition: ease-in-out 0.3s;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .team-member .social a:hover {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-}
-
-.team .team-member .social i {
-  font-size: 18px;
-  line-height: 0;
-}
-
 .team .team-member .member-info {
   padding: 25px 15px;
 }
@@ -1339,15 +1257,11 @@ section,
 
 .team .team-member .member-info span {
   display: block;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.team .team-member:hover .social {
-  opacity: 1;
-  bottom: 15px;
-}
 
 /*--------------------------------------------------------------
 # Pricing Section
