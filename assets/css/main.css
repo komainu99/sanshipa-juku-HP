@@ -87,6 +87,12 @@ h6 {
   font-family: var(--heading-font);
 }
 
+@media (max-width: 640px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -656,6 +662,12 @@ section,
   margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -719,19 +731,19 @@ section,
 
 @media (max-width: 640px) {
   .hero h1 {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 36px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 
@@ -840,6 +852,14 @@ section,
 .about .icon-box:hover h4 a {
   color: var(--accent-color);
 }
+
+@media (max-width: 575px) {
+  .about .content h3 {
+    font-size: 28px;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1259,7 +1279,13 @@ section,
   display: block;
   font-size: 18px;
   font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+@media (max-width: 768px) {
+  .team .team-member .member-info span {
+    font-size: 12px;
+  }
 }
 
 
@@ -1362,6 +1388,13 @@ section,
     max-width: 60%;
     margin: 0 auto 30px auto;
   }
+  .pricing h4 {
+    font-size: 36px;
+  }
+  .pricing .pricing-item {
+    padding: 30px 20px;
+  }
+
 }
 
 @media (max-width: 767px) {
